@@ -13,33 +13,21 @@ Each project explores different concepts such as recursion, visualization, and p
 Projects/
 
 │
-
 ├── Fractals/
-
 │   ├── LSystems/
-
 │   │   ├── *.txt              # L-system rule files
-
 │   │   └── lsystems.py       # Pygame-based renderer
-
 │   │
-
 │   ├── shapes_fractal.py
-
 │   ├── shapes_spirals.py
-
 │   ├── shapes.py
-
 │   ├── sierpinski.py
-
 │   └── tree_fractal.py
-
 │
-
-├── Sorting/                  # (Planned)
-
+├── Sorting/                 
+│   ├── AlphabetSort.py
+│   └── NumberSort.py
 │
-
 └── Game/                     # (Planned)
 
 ```
@@ -83,20 +71,60 @@ These scripts explore recursion, symmetry, and geometric construction.
 ---
 ## Sorting (Planned)
   
-A number sorting program with performance comparison.
-### Features (planned):
-* Accepts:
-	* User input
-	* File input (space-separated numbers)
-* Outputs:
-	* Sorted numbers (ascending or descending)
-* Includes multiple algorithms:
-	* Bubble Sort
-	* Selection Sort
-	* Insertion Sort
-	* (More to be added)
-* Displays execution time in **nanoseconds**
+Interactive sorting applications focused on **algorithm comparison and performance analysis**.
 
+### Alphabet Sort (`AlphabetSort.py`)
+
+A GUI-based tool for sorting words or letters.
+
+### Features:
+
+* User input (space-separated words/letters)
+* Sort options:
+  * A → Z
+  * Z → A
+* Displays sorted output
+* Benchmarks multiple algorithms:
+  * Lambda (Python built-in / Timsort)
+  * Bubble Sort
+  * Cocktail Shaker Sort
+  * Heap Sort
+  * Merge Sort
+  * Quick Sort
+  * Bucket Sort
+* Execution time displayed in:
+  * Seconds
+  * Milliseconds
+  * Microseconds
+  * Nanoseconds
+
+### Number Sort (`NumberSort.py`)
+
+An extended version designed for **numerical data and deeper algorithm comparison**.
+
+#### Features:
+* Accepts:
+  * Manual input (space-separated numbers)
+  * File input (`.txt`, supports multi-line data)
+* Sort options:
+  * 0 → 9 (ascending)
+  * 9 → 0 (descending)
+* Displays sorted output
+* Benchmarks multiple algorithms:
+  * Lambda (Timsort)
+  * Bubble Sort (while loop)
+  * Bubble Sort (recursive)
+  * Heap Sort
+  * Merge Sort
+  * Quick Sort
+  * Cycle Sort
+  * Counting Sort
+  * Shell Sort
+
+#### Notes:
+* Counting Sort uses **O(n + k)** and depends on value range
+* Quick Sort may degrade to **O(n²)** depending on pivot choice
+* Recursive Bubble Sort is included for educational purposes
 ---
 ## Game (Planned)
 
@@ -111,7 +139,7 @@ A classic Snake game implemented in Python.
 * Simple UI using `pygame`
 
 ---
-## ⚙️ Requirements
+## Requirements
 
 * Python 3.x
 * `pygame` (for graphics-based projects)
@@ -119,9 +147,7 @@ A classic Snake game implemented in Python.
 Install pygame:
 
 ```bash
-
 pip install pygame
-
 ```
 
 ---
@@ -134,9 +160,3 @@ pip install pygame
 * Develop small **game projects**
 
 ---
-## Future Improvements
-
-* Add GUI controls for fractal parameters
-* Expand sorting algorithms (merge, quicksort, etc.)
-* Add benchmarking visualizations
-* Enhance game mechanics and UI
