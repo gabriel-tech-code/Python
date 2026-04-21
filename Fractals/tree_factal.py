@@ -78,7 +78,8 @@ def branch_4(branch_length, angle):
         left(angle)
         backward(branch_length)
 
-build_tree = 4
+# Set tree 0-4 (0 is the most basic, 4 is the most complex)
+build_tree = 0
 
 if build_tree == 1:
     branch_1(100, 30)

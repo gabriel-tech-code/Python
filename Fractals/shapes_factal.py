@@ -17,7 +17,7 @@ def polygon(sides, side_length, richardson, t_right, t_left, t_forward):
         forward(t_forward)
         polygon(sides, side_length - 1, richardson, t_right, t_left, t_forward)
 
-# sides, length, loop,right,left,forward
+# sides, length, loop,right, left,forward
 polygon(6, 100, 0,3,0,6)
 done()
 
